@@ -33,13 +33,13 @@ class _InfoState extends State<Info> {
               Padding(
                 padding: const EdgeInsets.all(10.0),
                 child: Text(
-                    "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters."),
+                    "Me chamo Leon de Freitas Teberga, tenho 18 anos e sou estudante de informatica no Senac de Pindamonhangaba. Adoro aprender linguagens novas e mexer com hardwares."),
               ),
               Titulo(txt: "Hobbies"),
               Padding(
                 padding: const EdgeInsets.all(10.0),
                 child: Text(
-                    " It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."),
+                    "Nas horas vagas, gosto muito de dar um 'role' de skate, passar um tempo com a familia e curtir com os amigos."),
               ),
               Titulo(txt: "Saiba mais:"),
               Padding(
