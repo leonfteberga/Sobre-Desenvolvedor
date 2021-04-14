@@ -1,0 +1,82 @@
+import 'package:flutter/material.dart';
+import 'package:sobredev/componente.dart';
+
+class Info extends StatefulWidget {
+  @override
+  _InfoState createState() => _InfoState();
+}
+
+class _InfoState extends State<Info> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Conheça o desenvolvedor"),
+      ),
+      body: Container(
+          // Definir altura e largura do container:
+          width: double.infinity,
+          height: double.infinity,
+          child: Column(
+            children: [
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Image(
+                  width: 150,
+                  image: AssetImage('assets/images/perfil.png'),
+                  // alterar o pubspec
+                ),
+              ),
+              Titulo(
+                txt: "Quem sou eu?",
+              ),
+              Padding(
+                padding: const EdgeInsets.all(10.0),
+                child: Text(
+                    "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters."),
+              ),
+              Titulo(txt: "Hobbies"),
+              Padding(
+                padding: const EdgeInsets.all(10.0),
+                child: Text(
+                    " It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."),
+              ),
+              Titulo(txt: "Saiba mais:"),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    ElevatedButton.icon(
+                      onPressed: () => null,
+                      icon: Icon(Icons.account_circle),
+                      label: Text("Facebook"),
+                    ),
+                    ElevatedButton.icon(
+                      onPressed: () => null,
+                      icon: Icon(Icons.add),
+                      label: Text("Twitter"),
+                    )
+                  ],
+                ),
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  ElevatedButton.icon(
+                    onPressed: () => null,
+                    icon: Icon(Icons.business_center_rounded),
+                    label: Text("Lattes"),
+                  ),
+                  ElevatedButton.icon(
+                    onPressed: () => null,
+                    icon: Icon(Icons.account_box_rounded),
+                    label: Text("Fragnatica"),
+                  )
+                ],
+              ),
+            ],
+          )),
+    );
+  }
+}
